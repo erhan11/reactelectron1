@@ -1,0 +1,48 @@
+html,
+body {
+  height: 1px;
+  min-height: 100%;
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+#wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#display {
+  margin-bottom: 2em;
+  padding: 0.25em;
+  width: 9em;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+#pin-pad {
+  display: grid;
+  grid-template-rows: 4em 4em 4em 4em;
+  grid-template-columns: 4em 4em 4em;
+  grid-gap: 3px;
+  user-select: none;
+}
+#pin-pad div:hover,
+#pin-pad div.js-depressed {
+  background-color: #ccc;
+}
+
+#pin-pad div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  font-size: 1.25em;
+}
+
+#pin-pad div:hover {
+  background-color: #ccc;
+}
